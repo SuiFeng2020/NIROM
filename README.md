@@ -2,5 +2,5 @@
 
 Some papers and notes on NIMOR.
 
-## 笔记在线阅读地址(内容实时更新)
-地址：https://datawhalechina.github.io/leedeeprl-notes/
+## Note online reading address (content updated in real time)
+address：https://datawhalechina.github.io/leedeeprl-notes/
