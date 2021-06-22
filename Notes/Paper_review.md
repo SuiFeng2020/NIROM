@@ -44,6 +44,9 @@ $$
 \boldsymbol{S}(\tilde{\boldsymbol{x}}, \boldsymbol{\mu})=\tilde{\boldsymbol{x}}+\sum_{i=1}^{N}\left[\phi_{i}(\tilde{\boldsymbol{x}}) \boldsymbol{d}_{i}\left(\pi_{i}(\tilde{\boldsymbol{x}}), \boldsymbol{\mu}\right)-\phi_{i}(\tilde{\boldsymbol{x}}) \phi_{i+1}(\tilde{\boldsymbol{x}}) \boldsymbol{d}_{i}(1, \boldsymbol{\mu})\right]
 $$
 
+$$
+\ell(w_1, w_2, b) =\frac{1}{n} \sum_{i=1}^n \ell^{(i)}(w_1, w_2, b) =\frac{1}{n} \sum_{i=1}^n \frac{1}{2}\left(x_1^{(i)} w_1 + x_2^{(i)} w_2 + b - y^{(i)}\right)^2
+$$
 ### Conclusion
 
 We can observe that in both cases the meshes deformed by the BDD TM are much more regular and there is no overlapping between the triangles of the mesh. In particular, with the BDD TM, the position of the domain in the Cartesian coordinate plane does not affect the effectiveness of the map. Moreover, the new proposed map allows us to deal with more complex parameterizations of the domain and consequently bigger deformations of the geometry without producing any overlapping phenomena between the triangles of a mesh defined in the domain. 
