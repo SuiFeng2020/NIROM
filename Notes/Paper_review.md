@@ -12,7 +12,7 @@ The idea behind the transfinite maps (TMs) is to deform the interior points of t
 
 For each side of the reference domain, we associate one weight function $\varphi_i$ with one projection function $\pi_{i}$ .For a domain with $n$ sides, we have to solve $2n$ elliptic problems; however, these computations are independent of the deformation (and so of the parameter $\mu$ ) and they could be included in the offline stage (computed just once) to guarantee computational efficiency.
 
-![](C:\Users\hexiaofeng\Desktop\1.png)
+![](D:\Data\GitHub\git_repo\Notes\figure\1.png)
 $$
 \left\{\begin{array}{ll}
 \Delta \varphi_{i}=0 & \text { in } \tilde{\Omega},  \\
