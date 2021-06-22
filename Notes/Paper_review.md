@@ -11,20 +11,16 @@ The idea behind the transfinite maps (TMs) is to deform the interior points of t
 ### Offline stage
 
 For each side of the reference domain, we associate one weight function $\varphi_i$ with one projection function $\pi_{i}$ .For a domain with $n$ sides, we have to solve $2n$ elliptic problems; however, these computations are independent of the deformation (and so of the parameter $\mu$ ) and they could be included in the offline stage (computed just once) to guarantee computational efficiency.
-$$\ell^{(i)}(w_1, w_2, b) = \frac{1}{2} \left(\hat{y}^{(i)} - y^{(i)}\right)^2$$
 
+![](C:\Users\hexiaofeng\Desktop\1.png)
 $$
-\tilde{\Gamma}\_{k}
-$$
-$$
-\left(\{\begin{array}{ll}
+\left\{\begin{array}{ll}
 \Delta \varphi_{i}=0 & \text { in } \tilde{\Omega},  \\
-\varphi_{i}=1 & \text { on } \tilde{\Gamma}_{i}, \\
-\frac{\partial \varphi_{i}}{\partial n}=0 & \text { on } \tilde{\Gamma}_{j}, j=i-1, i+1, \\
-\varphi_{i}=0 & \text { on } \tilde{\Gamma}_{j}, j \neq i-1, i, i+1
+\varphi_{i}=1 & \text { on } \tilde{\Gamma}_ {i}, \\
+\frac{\partial \varphi_{i}}{\partial n}=0 & \text { on } \tilde{\Gamma}_ {j}, j=i-1, i+1, \\
+\varphi_{i}=0 & \text { on } \tilde{\Gamma}_ {j}, j \neq i-1, i, i+1
 \end{array}\right.
 $$
-
 
 $$
 \left\{\begin{array}{ll}
@@ -61,11 +57,8 @@ $$
 
 ### Conclusion
 
+![](C:\Users\hexiaofeng\Desktop\2.png)
+
+![](C:\Users\hexiaofeng\Desktop\4.png)
 
 We can observe that in both cases the meshes deformed by the BDD TM are much more regular and there is no overlapping between the triangles of the mesh. In particular, with the BDD TM, the position of the domain in the Cartesian coordinate plane does not affect the effectiveness of the map. Moreover, the new proposed map allows us to deal with more complex parameterizations of the domain and consequently bigger deformations of the geometry without producing any overlapping phenomena between the triangles of a mesh defined in the domain. 
-
-在模型训练中，我们希望找出一组模型参数，记为 $w_1^* , w_2^* , b^*$，来使训练样本平均损失最小：
-
-$$
-w_1^* , w_2^* , b^* = \underset{w_1, w_2, b}{\arg\min} \ell(w_1, w_2, b)
-$$
