@@ -22,6 +22,9 @@ $$
 $$
 
 $$
+a+b=c
+$$
+$$
 \left\{\begin{array}{ll}
 \Delta \pi_{i}=0 & \text { in } \tilde{\Omega} \\
 \pi_{i}=t & \text { on } \tilde{\Gamma}_{i} \\
