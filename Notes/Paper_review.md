@@ -16,8 +16,8 @@ For each side of the reference domain, we associate one weight function $\varphi
 $$
 \left\{\begin{array}{ll}
 \Delta \varphi_{i}=0 & \text { in } \tilde{\Omega},  \\
-\varphi_{i}=1 & \text { on } \tilde{\Gamma}_{i}, \\
-\frac{\partial \varphi_{i}}{\partial n}=0 & \text { on } \tilde{\Gamma}_{j}, j=i-1, i+1, \\
+\varphi_{i}=1 & \text { on } \tilde{\Gamma}\_{i}, \\
+\frac{\partial \varphi_{i}}{\partial n}=0 & \text { on } \tilde{\Gamma}\_{j}, j=i-1, i+1, \\
 \varphi_{i}=0 & \text { on } \tilde{\Gamma}\_{j}, j \neq i-1, i, i+1
 \end{array}\right.
 $$
