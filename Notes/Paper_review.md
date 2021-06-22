@@ -64,8 +64,8 @@ $$
 
 We can observe that in both cases the meshes deformed by the BDD TM are much more regular and there is no overlapping between the triangles of the mesh. In particular, with the BDD TM, the position of the domain in the Cartesian coordinate plane does not affect the effectiveness of the map. Moreover, the new proposed map allows us to deal with more complex parameterizations of the domain and consequently bigger deformations of the geometry without producing any overlapping phenomena between the triangles of a mesh defined in the domain. 
 
-在模型训练中，我们希望找出一组模型参数，记为 $w_1^*, w_2^*, b^*$，来使训练样本平均损失最小：
+在模型训练中，我们希望找出一组模型参数，记为 $w_1^* , w_2^* , b^*$，来使训练样本平均损失最小：
 
 $$
-w_1^*, w_2^*, b^* = \underset{w_1, w_2, b}{\arg\min} \ell(w_1, w_2, b)
+w_1^* , w_2^* , b^* = \underset{w_1, w_2, b}{\arg\min} \ell(w_1, w_2, b)
 $$
