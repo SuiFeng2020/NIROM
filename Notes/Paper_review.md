@@ -14,7 +14,7 @@ For each side of the reference domain, we associate one weight function $\varphi
 $$\ell^{(i)}(w_1, w_2, b) = \frac{1}{2} \left(\hat{y}^{(i)} - y^{(i)}\right)^2$$
 
 $$
-\tilde{\Gamma}_{k}
+\tilde{\Gamma}\_{k}
 $$
 $$
 \left(\{\begin{array}{ll}
