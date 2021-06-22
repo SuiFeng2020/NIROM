@@ -12,7 +12,6 @@ The idea behind the transfinite maps (TMs) is to deform the interior points of t
 
 For each side of the reference domain, we associate one weight function $\varphi_i$ with one projection function $\pi_{i}$ .For a domain with $n$ sides, we have to solve $2n$ elliptic problems; however, these computations are independent of the deformation (and so of the parameter $\mu$ ) and they could be included in the offline stage (computed just once) to guarantee computational efficiency.
 
-![](D:\Data\GitHub\git_repo\Notes\figure\1.png)
 $$
 \left\{\begin{array}{ll}
 \Delta \varphi_{i}=0 & \text { in } \tilde{\Omega},  \\
@@ -43,7 +42,9 @@ The advantage of such a map is that for each parameterized domain $\Omega(\bolds
 ## Boundary displacement-dependent transfinite maps
 
 ### Main idea
-
+$$
+\hat{y} = x_1 w_1 + x_2 w_2 + b
+$$
 The basic idea of the Boundary Displacement-Dependent Transfinite Map $(B D D T M$ is to keep into account the original positions of the points in the reference domain $\tilde{\Omega}$ and to move them by weighting only the difference between the original boundaries and the deformed ones. 
 
  Let $\mathcal{D}$ be the parameter domain, we define the displacement function $\boldsymbol{d}_{i}:[0,1] \times \mathcal{D} \rightarrow \Gamma_{i}$ as:
@@ -57,9 +58,6 @@ $$
 
 ### Conclusion
 
-![](C:\Users\hexiaofeng\Desktop\2.png)
-
-![](C:\Users\hexiaofeng\Desktop\4.png)
 
 We can observe that in both cases the meshes deformed by the BDD TM are much more regular and there is no overlapping between the triangles of the mesh. In particular, with the BDD TM, the position of the domain in the Cartesian coordinate plane does not affect the effectiveness of the map. Moreover, the new proposed map allows us to deal with more complex parameterizations of the domain and consequently bigger deformations of the geometry without producing any overlapping phenomena between the triangles of a mesh defined in the domain. 
 
