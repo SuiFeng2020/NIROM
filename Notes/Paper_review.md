@@ -12,23 +12,12 @@ The idea behind the transfinite maps (TMs) is to deform the interior points of t
 
 For each side of the reference domain, we associate one weight function $\varphi_i$ with one projection function $\pi_{i}$ .For a domain with $n$ sides, we have to solve $2n$ elliptic problems; however, these computations are independent of the deformation (and so of the parameter $\mu$ ) and they could be included in the offline stage (computed just once) to guarantee computational efficiency.
 
-
 $$
 \left\{\begin{array}{ll}
 \Delta \varphi_{i}=0 & \text { in } \tilde{\Omega},  \\
 \varphi_{i}=1 & \text { on } \tilde{\Gamma}_{i}, \\
 \frac{\partial \varphi_{i}}{\partial n}=0 & \text { on } \tilde{\Gamma}_{j}, j=i-1, i+1, \\
 \varphi_{i}=0 & \text { on } \tilde{\Gamma}_{j}, j \neq i-1, i, i+1
-\end{array}\right.
-$$
-
-$$
-\left\{\begin{array}{ll}
-\Delta \pi_{i}=0 & \text { in } \tilde{\Omega} \\
-\pi_{i}=t & \text { on } \tilde{\Gamma}_{i} \\
-\pi_{i}=0 & \text { on } \tilde{\Gamma}_{i-1}, \\
-\pi_{i}=1 & \text { on } \tilde{\Gamma}_{i+1}, \\
-\frac{\partial \pi_{i}}{\partial n}=0 & \text { on } \tilde{\Gamma}_{j}, j \neq i-1, i, i+1,
 \end{array}\right.
 $$
 
@@ -58,4 +47,8 @@ $$
 ### Conclusion
 
 We can observe that in both cases the meshes deformed by the BDD TM are much more regular and there is no overlapping between the triangles of the mesh. In particular, with the BDD TM, the position of the domain in the Cartesian coordinate plane does not affect the effectiveness of the map. Moreover, the new proposed map allows us to deal with more complex parameterizations of the domain and consequently bigger deformations of the geometry without producing any overlapping phenomena between the triangles of a mesh defined in the domain. 
+
+$$
+\boldsymbol{T}(\tilde{\boldsymbol{x}}, \boldsymbol{\mu})=\sum_{i=1}^{N}\left[\phi_{i}(\tilde{\boldsymbol{x}}) \boldsymbol{\psi}_{i}\left(\pi_{i}(\tilde{\boldsymbol{x}}), \boldsymbol{\mu}\right)-\phi_{i}(\tilde{\boldsymbol{x}}) \phi_{i+1}(\tilde{\boldsymbol{x}}) \boldsymbol{x}_{i}\right] .
+	$$
 
