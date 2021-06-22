@@ -47,6 +47,13 @@ $$
 $$
 \ell(w_1, w_2, b) =\frac{1}{n} \sum_{i=1}^n \ell^{(i)}(w_1, w_2, b) =\frac{1}{n} \sum_{i=1}^n \frac{1}{2}\left(x_1^{(i)} w_1 + x_2^{(i)} w_2 + b - y^{(i)}\right)^2
 $$
+$$
+\boldsymbol{d}_{i}(t, \boldsymbol{\mu})=\boldsymbol{\psi}_{i}(t, \boldsymbol{\mu})-\tilde{\boldsymbol{\psi}}_{i}(t)
+$$
+$$
+\hat{y}^{(i)} = x_1^{(i)} w_1 + x_2^{(i)} w_2 + b
+$$
+
 ### Conclusion
 
 We can observe that in both cases the meshes deformed by the BDD TM are much more regular and there is no overlapping between the triangles of the mesh. In particular, with the BDD TM, the position of the domain in the Cartesian coordinate plane does not affect the effectiveness of the map. Moreover, the new proposed map allows us to deal with more complex parameterizations of the domain and consequently bigger deformations of the geometry without producing any overlapping phenomena between the triangles of a mesh defined in the domain. 
